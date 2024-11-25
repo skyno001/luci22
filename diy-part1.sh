@@ -15,7 +15,5 @@
 
 # Add a feed source
 sed -i 's/openwrt-23.05/master/g' feeds.conf.default
-sed -i 's/6.6 = .62/6.6 = .61/g' include/kernel-6.6
-sed -i 's/6.6.62 = e2c35611775534941b9d4dd871f3ae5b988b6594dc9033b5ca784366e07d9336/6.6.61 = 418fc24df9190f1c3ed9906dc3b7651c2a2eae5c1cb9ab4a6348e20faf047c0b/g' include/kernel-6.6
 echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
